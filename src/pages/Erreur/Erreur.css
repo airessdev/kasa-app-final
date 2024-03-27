@@ -1,0 +1,44 @@
+.error-title {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 288px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.error-msg {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.back {
+  cursor: pointer;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+.back a {
+  color: black !important;
+  text-decoration: underline !important;
+}
+
+@media screen and (max-width: 768px) {
+  .error-wrap {
+    margin-top: 50px;
+  }
+  .error-title {
+    font-size: 95px;
+  }
+
+  .error-msg {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .back {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,29 @@
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 209px;
+  background-color: #000000;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  gap: 28px;
+}
+
+.footer-wrap img {
+  width: 122px;
+  height: 40px;
+}
+
+.footer-text {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-text {
+    font-size: 18px;
+  }
+}
