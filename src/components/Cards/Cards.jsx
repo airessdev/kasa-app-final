@@ -9,10 +9,11 @@ const Cards = ({ item }) => {
 
         <div className="img-container">
           <img src={item.cover} alt={item.title} />
+          <h2 className="text">{item.title}</h2>
         </div>
-        <div className="card-title">
-          <h2>{item.title}</h2>
-        </div>
+
+
+
       </Link>
     </div>
   );

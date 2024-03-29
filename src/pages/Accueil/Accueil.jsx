@@ -10,15 +10,20 @@ import "./Accueil.css";
 const Accueil = () => {
   return (
     <>
+    {/* composant header envoyé à la page accueil */}
       <Header />
-      <main className="main">
+
+      <div className="main">
         <Banner imageSrc={bannerImg} />
-        <section className="cards-container">
-          {Data.map((item) => (
-            <Cards key={item.id} item={item} />
+        <div className="cards-container">
+          {/* permet de lire l'élément suivant de data */}
+          {Data.map((element) => (
+            // et de remplir un composant Cards avec les données de l'élément
+            <Cards key={element.id} item={element} />
           ))}
-        </section>
-      </main>
+
+        </div>
+      </div>
       <Footer />
     </>
   );

@@ -1,12 +1,13 @@
 .card {
-  width: 28.2%;
+  width: 28%;
   transition: all 0.2s ease-out;
 }
 
 .card:hover {
-  transform: scale(102%);
+  transform: scale(105%);
+
   .card-title {
-    transform: translateY(1%);
+    transform: translateX(1%);
   }
 }
 
@@ -30,26 +31,30 @@
 .card-title {
   bottom: 0;
   height: 150px;
+
   position: absolute;
   width: 100%;
   background: #000;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 13%, rgba(0, 212, 255, 0) 70%);
-  border-radius: 15px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 212, 255, 0) 70%
+  );
 }
 
-.card-title h2 {
+.text {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   position: absolute;
-  bottom: 15%;
-  left: 15px;
-  right: 15px;
+  bottom: 10px;
+  left: 20px;
+  text-shadow: 0 0 0.2em black;
 }
 
 @media screen and (max-width: 1230px) {
   .card {
-    width: 47%;
+    width: 45%;
   }
 }
 
