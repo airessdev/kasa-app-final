@@ -8,11 +8,6 @@
   width: 100%;
 }
 
-.housing-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 25px 0 25px 0;
-}
 
 .housing-error {
   color: #ff6060;
@@ -48,11 +43,7 @@
   font-size: 28px;
 }
 
-.housing-location {
-  color: #ff6060;
-  margin-top: 5px;
-  font-weight: 500;
-}
+
 
 .housing-collapse {
   display: flex;

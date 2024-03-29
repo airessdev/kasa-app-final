@@ -22,15 +22,16 @@
   .banner {
     height: 125px;
   }
-
-  .banner-about {
-    height: 250px;
-  }
-
   .banner-text {
     text-align: center;
     font-family: Montserrat;
     font-size: 22px;
     font-weight: 700;
   }
+
+  .banner-about {
+    height: 250px;
+  }
+
+ 
 }

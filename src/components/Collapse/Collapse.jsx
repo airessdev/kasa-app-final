@@ -18,7 +18,7 @@ const Collapse = ({ title, children }) => {
 
 
 
-//fonction pour changer l'etat du menu collapse
+  //fonction pour changer l'etat du menu collapse
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -34,7 +34,9 @@ const Collapse = ({ title, children }) => {
         <img src={icon} className="collapse-icon" alt="icone du menu" style={iconStyle} />
 
       </button>
-      {isOpen && <div className="collapse-content">{children}</div>}
+      {/* rendu conditionnel */}
+      {isOpen && <div className="collapse-text">{children}</div>}
+
     </div>
   );
 };

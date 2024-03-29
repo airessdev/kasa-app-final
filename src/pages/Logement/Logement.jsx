@@ -5,7 +5,6 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Host from "../../components/Host/Host";
 import Slideshow from "../../components/Slideshow/Slideshow";
-import Tags from "../../components/Tags/Tags";
 import Data from "../../data/data.json";
 import "./Logement.css";
 
@@ -15,10 +14,16 @@ const Logement = () => {
   const housing = Data.find((item) => item.id === id);
 
   useEffect(() => {
+  
+   //on renvoie à la page 404 si l'id n'est pas trouvé , sinon on affiche le logement
+   //pour gérer les erreurs 404 de la page logement , sinon il n'affiche pas la page 404 malgré la route * dans router
+    
     if (!housing) {
+      
       navigate("/404");
       return;
     }
+
   }, [housing, navigate]);
 
 
@@ -37,24 +42,23 @@ const Logement = () => {
     host: { name, picture },
   } = housing;
 
-  
+  console.log(housing);
+  console.log(equipments);
+
 
   return (
     <>
       <Header />
-      <main className="housing-main">
-        
-          <Slideshow images={pictures} />
-        
-        <section className="housing-header">
-          <div className="housing-info">
-            <h1 className="housing-title">{title}</h1>
-            <p className="housing-location">{location}</p>
-            <Tags tags={tags} />
-          </div>
-          <Host rating={rating} name={name}  picture={picture} />
-        </section>
-        <section className="housing-collapse">
+      <div className="housing-main">
+
+        <Slideshow images={pictures} />
+
+        <div className="housing-header">
+
+          <Host title={title} location={location} tags={tags} rating={rating} name={name} picture={picture} />
+        </div>
+
+        <div className="housing-collapse">
           <Collapse title="Description">
             <p>{description}</p>
           </Collapse>
@@ -65,8 +69,10 @@ const Logement = () => {
               })}
             </ul>
           </Collapse>
-        </section>
-      </main>
+        </div>
+
+      </div>
+      
       <Footer />
     </>
   );
