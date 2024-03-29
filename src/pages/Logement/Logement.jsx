@@ -11,23 +11,24 @@ import "./Logement.css";
 const Logement = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const housing = Data.find((item) => item.id === id);
+  const elementHostel = Data.find((item) => item.id === id);
+  console.log(elementHostel);
 
   useEffect(() => {
-  
-   //on renvoie à la page 404 si l'id n'est pas trouvé , sinon on affiche le logement
-   //pour gérer les erreurs 404 de la page logement , sinon il n'affiche pas la page 404 malgré la route * dans router
-    
-    if (!housing) {
-      
+
+    //on renvoie à la page 404 si l'id n'est pas trouvé , sinon on affiche le logement
+    //pour gérer les erreurs 404 de la page logement , sinon il n'affiche pas la page 404 malgré la route * dans router
+
+    if (!elementHostel) {
+
       navigate("/404");
       return;
     }
 
-  }, [housing, navigate]);
+  }, [elementHostel, navigate]);
 
 
-  if (!housing) {
+  if (!elementHostel) {
     return;
   }
 
@@ -40,10 +41,10 @@ const Logement = () => {
     title,
     location,
     host: { name, picture },
-  } = housing;
+  } = elementHostel;
 
-  console.log(housing);
-  console.log(equipments);
+  console.log(elementHostel);
+
 
 
   return (
@@ -72,7 +73,7 @@ const Logement = () => {
         </div>
 
       </div>
-      
+
       <Footer />
     </>
   );
