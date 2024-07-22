@@ -23,7 +23,9 @@ const Collapse = ({ title, children }) => {
   const toggle = () => {
     setIsOpen(!isOpen);
 
-    setIconStyle(isOpen ? iconStart : { transform: "rotate(-180deg)", transition: "all 0.2s linear" });
+    setIconStyle(isOpen ?
+       iconStart :
+        { transform: "rotate(-180deg)", transition: "all 0.2s linear" });
   };
   //icone tourne vers la gauche dans la maquette
 
