@@ -18,13 +18,14 @@
 
 @media screen and (max-width: 768px) {
   .tag {
-    font-size: 10px;
-    width: 40%;
+    font-size: 0.4em;
+    margin:0px;
+    
   }
 }
 @media screen and (max-width: 320px) {
   .tag {
-    font-size: 7px;
+    font-size: 100px;
     width: 30%;
   }
 }
