@@ -1,5 +1,4 @@
 import bannerImg from "../../assets/images/banner-background.png";
-
 import Data from "../../data/data.json";
 import Cards from "../../components/Cards/Cards";
 import Banner from "../../components/Banner/Banner";

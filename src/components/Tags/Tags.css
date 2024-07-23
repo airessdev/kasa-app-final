@@ -19,5 +19,12 @@
 @media screen and (max-width: 768px) {
   .tag {
     font-size: 10px;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .tag {
+    font-size: 7px;
+    width: 30%;
   }
 }
