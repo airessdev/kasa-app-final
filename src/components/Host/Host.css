@@ -115,6 +115,7 @@
   .host-info {
     flex-direction: row; /* Changement à column pour une meilleure adaptation sur petits écrans */
     align-items: center; /* Centrer les éléments */
+    justify-content: end;
   }
 
   .host-name {
