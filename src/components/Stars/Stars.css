@@ -1,0 +1,16 @@
+.stars {
+    display: flex;
+    gap: 5px; /* Espace entre les étoiles */
+  }
+  
+  .stars img {
+    width: 30px; /* Taille des étoiles */
+    height: 30px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .stars img {
+      width: 26px; /* Taille réduite pour les petits écrans */
+      height: 26px;
+    }
+  }

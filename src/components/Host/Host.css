@@ -1,5 +1,6 @@
-.housing-host {
+/* .housing-host {
   display: flex;
+  width: 60%;
   flex-direction: column;
   align-items: flex-end;
   gap: 20px;
@@ -33,7 +34,7 @@
 }
 
 .host-rating {
-  width: 196px;
+  width: 700px;
   text-align: end;
 }
 
@@ -46,5 +47,74 @@
 
   .host-rating {
     text-align: start;
+    
+  }
+} */
+
+.housing-host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  width: 100%; /* S'assurer qu'il occupe toute la largeur disponible */
+}
+
+.host-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.housing-location {
+  color: #000000;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.housing-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.host-name {
+  color: #ff6060;
+  font-weight: 500;
+}
+
+.host-img {
+  border-radius: 50%;
+  width: 54px;
+}
+
+.host-rating {
+  width: 100%; /* Utilisation de 100% pour la largeur pour une meilleure adaptation */
+  display: contents;
+  text-align: end;
+}
+
+@media screen and (max-width: 768px) {
+  .housing-host {
+    flex-direction: row-reverse; /* Changement à column pour une meilleure adaptation sur petits écrans */
+    align-items: center;
+    justify-content: space-between; /* Centrer les éléments */
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%; /* S'assurer que l'élément prend toute la largeur disponible */
+  }
+
+  .host-rating {
+    text-align: center; /* Centrer le texte */
+    width: 100%; /* Utilisation de 100% pour la largeur */
+  }
+
+  .host-info {
+    flex-direction: row; /* Changement à column pour une meilleure adaptation sur petits écrans */
+    align-items: center; /* Centrer les éléments */
+  }
+
+  .host-name {
+    text-align: center; /* Centrer le texte */
   }
 }

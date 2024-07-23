@@ -6,35 +6,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25px;
+  width: 130px;
+  height: 30px;
   border-radius: 10px;
   background-color: #ff6060;
   color: #fff;
   padding: 5px;
 }
 .tag-container p {
-}
-.tag {
-  /* width: auto;
-  height: 25px;
-  background-color: #ff6060;
-  color: #fff;
   font-size: 14px;
-  font-weight: 500;
-  border-radius: 10px;
-  text-align: center;
-  padding: 4px 24px;
-  margin-top: 20px; */
+  line-height: 19.96px;
 }
 
 @media screen and (max-width: 768px) {
-  .tag-container p {
-    font-size: 0.7em;
-    margin: 0px;
+  .tag-container {
+    height: 18px;
+    width: 95px;
   }
-}
-@media screen and (max-width: 320px) {
-  .tag {
-    font-size: 0.4em;
+  .tag-container p {
+    font-size: 10px;
+    margin: 0px;
   }
 }
